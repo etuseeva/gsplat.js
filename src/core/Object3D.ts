@@ -91,6 +91,10 @@ abstract class Object3D extends EventDispatcher {
     get transform() {
         return this._transform;
     }
+
+    get myTest () {
+        return 'my test';
+    }
 }
 
 export { Object3D };
