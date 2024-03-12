@@ -88,7 +88,7 @@ void main () {
 
     if (useDepthFade) {
         float depthNorm = (pos2d.z / pos2d.w + 1.0) / 2.0;
-        float near = 0.1; float far = 100.0;
+        float near = 0.1; float far = 1000.0;
         float normalizedDepth = (2.0 * near) / (far + near - depthNorm * (far - near));
         float start = max(normalizedDepth - 0.1, 0.0);
         float end = min(normalizedDepth + 0.1, 1.0);
